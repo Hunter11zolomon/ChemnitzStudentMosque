@@ -1,0 +1,1 @@
+pip install pandas selenium lxml openpyxl
