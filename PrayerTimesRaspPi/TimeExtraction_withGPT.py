@@ -59,12 +59,12 @@ if html:
 
     print("\nGebetszeiten (Normal):")
     print(zeitTafel_df)
-    zeitTafel_df.to_csv('GebetszeitenStundenPlan_normal.csv', index=False)
+    zeitTafel_df.to_csv('GebetszeitenStundenPlan_normal.csv', index=False,header=False)
     print("GebetszeitenStundenPlan_normal.xlsx'")
 
     print("\nGebetszeiten (Sommerzeit/Daylight):")
     print(zeitTafel_df_mit_dst)
-    zeitTafel_df_mit_dst.to_csv('GebetszeitenStundenPlan_Daylight.csv', index=False)
+    zeitTafel_df_mit_dst.to_csv('GebetszeitenStundenPlan_Daylight.csv', index=False,header=False)
     print("'GebetszeitenStundenPlan_dst.xlsx'")
 else:
     print("Keine Tabellen gefunden.")
